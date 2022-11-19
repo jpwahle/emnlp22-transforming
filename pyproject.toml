@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "autoregressive-paraphrasing"
+version = "0.1.0"
+description = "The official implementation of the EMNLP'22 paper \"How Large Language Models are Transforming Machine-Paraphrased Plagiarism\""
+authors = ["Jan Philip Wahle <hello@jpwahle.com>"]
+license = "Apache 2.0"
+readme = "README.md"
+packages = [{include = "autoregressive_paraphrasing"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+transformers = "^4.24.0"
+datasets = "^2.6.1"
+openai = "^0.25.0"
+evaluate = "^0.3.0"
+numpy = "^1.23.4"
+pandas = "^1.5.1"
+tqdm = "^4.64.1"
+torch = "1.12.1"
+sentencepiece = "^0.1.97"
+bert-score = "^0.3.12"
+bleu = "^0.3"
+rouge-score = "^0.1.2"
+nltk = "^3.7"
+accelerate = "^0.14.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
