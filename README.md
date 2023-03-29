@@ -18,7 +18,7 @@ To generate paraphrases using T5, run the following command:
 > Note: T5 benefits from more few shot examples as it actually performs some gradient steps. However, to make it comparable to GPT-3, we don't recommend exceeding 50 examples.
 
 ```bash
-poetry run python -m paraphrase.generate --model_name_or_path t5-11b --input_file input.txt --output_file output.txt --prompts prompts.txt
+poetry run python paraphrase.generate --model_name gpt3 --num_prompts 4 --num_examples 32
 ```
 
 For generating paraphrases using GPT-3, run the following command:
@@ -27,7 +27,7 @@ For generating paraphrases using GPT-3, run the following command:
 > Reducing the number of prompts and/or the number of samples can help reduce costs.
 
 ```bash
-OPENAI_API_KEY={YOUR_KEY} poetry run python paraphrase.generate --model_name_or_path gpt3 --input_file input.txt --output_file output.txt --prompts prompts.txt
+OPENAI_API_KEY={YOUR_KEY} poetry run python paraphrase.generate --model_name gpt3 --num_prompts 4 --num_examples 32
 ```
 
 For help, run the following command:
