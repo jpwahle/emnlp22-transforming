@@ -9,7 +9,7 @@ packages = [{include = "autoregressive_paraphrasing"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
-transformers = "^4.24.0"
+transformers = "^4.30.0"
 datasets = "^2.6.1"
 openai = "^0.25.0"
 evaluate = "^0.3.0"
